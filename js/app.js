@@ -27,7 +27,7 @@ sectionList.forEach((section) => {
     a = document.createElement("a");
     // Scroll to anchor ID using scrollTO event
     // Scroll to section on link click
-    a.addEventListener('click', () => section.scrollIntoView({ 'behavior': 'smooth' }));
+    li.addEventListener('click', () => section.scrollIntoView({ 'behavior': 'smooth' }));
 
     dataNav = section.getAttribute("data-nav");
     id = section.getAttribute("id");
